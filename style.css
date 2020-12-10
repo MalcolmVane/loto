@@ -40,7 +40,7 @@ body{
 }
 
 .button{
-  background: #2a9cbf;
+  background: #2bb554;
   outline: none;
   border: none;
   font-family: sans-serif;
@@ -57,7 +57,7 @@ body{
 }
 
 .button:hover{
-  background: #2db8e2;
+  background: #21dd59;
 }
 
 .invis{
