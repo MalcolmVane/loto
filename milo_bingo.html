@@ -12,14 +12,9 @@
       var recentlyDone;
       var listClone = [];
       function getRandomArrayElement(arr){
-    //Minimum value is set to 0 because array indexes start at 0.
     var min = 0;
-    //Get the maximum value my getting the size of the
-    //array and subtracting by 1.
     var max = (arr.length - 1);
-    //Get a random integer between the min and max value.
     var randIndex = Math.floor(Math.random() * (max - min)) + min;
-    //Return random value.
     return arr[randIndex];
 }
       function generateBoard() {
