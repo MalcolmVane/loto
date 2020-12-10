@@ -11,7 +11,7 @@
       var used = [];
       var recentlyDone;
       var listClone = [];
-      function getRandomArrayElement(arr){
+      function getValue(arr){
     var min = 0;
     var max = (arr.length - 1);
     var randIndex = Math.floor(Math.random() * (max - min)) + min;
@@ -21,7 +21,7 @@
         var listClone = [];
         var listClone = [...images]
         for (var i=1; i<=25; i++) {
-          chosen = getRandomArrayElement(listClone);
+          chosen = getValue(listClone);
           document.getElementById(i).src = chosen;
           used.push(chosen);
           console.log(chosen)
@@ -35,17 +35,11 @@
           document.getElementById(givenId).style.background = 'red';
           recentlyDone = givenId;
       }
-      function clearBoard() {
-        for (var i=1; i<=25; i++) {
-          document.getElementById(i).style.background = '#fcfcfc';
-        }
-      }
     </script>
     <div class="invis"></div>
     <div class="buttons">
       <div class="button" onclick="undo()">Undo</div>
       <div class="button" onclick="generateBoard()">Generate Board</div>
-      <div class="button" onclick="clearBoard()">Clear Board</div>
     </div>
     <div class="grid">
     <div class="column">
